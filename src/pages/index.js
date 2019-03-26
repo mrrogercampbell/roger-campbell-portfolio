@@ -72,7 +72,7 @@ class HomeIndex extends React.Component {
 
     render() {
         const siteTitle = "Roger Campbell II"
-        const siteDescription = "Site description"
+        const siteDescription = "Roger Campbell II's Portfolio"
 
         return (
             <Layout>
@@ -84,6 +84,21 @@ class HomeIndex extends React.Component {
                 <div id="main">
 
                     <section id="one">
+                        <header className="major">
+                            <h2>About Me</h2>
+                        </header>
+                        <h1>I am a mission driven Software Engineer equipped with the insight to thrive under pressure and tackle complex problems. I bring a creative edge and innovative mindset to development.</h1>
+
+                        <br />
+
+                        <p> <strong>Front-End Knowledge:</strong> JavaScript | React.js | React Native | Python | Django | Express | MongoDB | Mongoose | Node |  PostgresSQL </p>
+                        <p> <strong>Back-End Knowledge:</strong> JavaScript | React.js | React Native | Python | Django | Express | MongoDB | Mongoose | Node |  PostgresSQL </p>
+                        <ul className="actions">
+                            <li><a href="#three" className="button">Get in Touch</a></li>
+                        </ul>
+                    </section>
+
+                    <section id="two">
                         <h2>Recent Work</h2>
 
                         <Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail, caption, description, tech, repo }) => ({
@@ -96,16 +111,6 @@ class HomeIndex extends React.Component {
                             repo
                         }))} />
 
-                        <ul className="actions">
-                            <li><a href="#three" className="button">Get in Touch</a></li>
-                        </ul>
-                    </section>
-
-                    <section id="two">
-                        <header className="major">
-                            <h2>Roger is Something here</h2>
-                        </header>
-                        <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
                         <ul className="actions">
                             <li><a href="#three" className="button">Get in Touch</a></li>
                         </ul>
