@@ -129,8 +129,21 @@ class HomeIndex extends React.Component {
                                         954.242.9917
                                     </li>
                                     <li>
-                                        <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
-                                        <a href="mailto:roger.campbell527@gmail.com?Subject=Hello,%20Roger!">Roger.Campbell527@gmail.com</a>
+                                        <a href='https://www.linkedin.com/in/roger-campbell-ii' target='_blank'>
+                                            <h3 className="icon fa-linkedin"><span className="label">LinkedIn</span></h3>
+                                            linkedin.com/in/roger-campbell-ii
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href='https://github.com/rc1336' target='_blank'>
+                                            <h3 className="icon fa-github"><span className="label">GitHub</span></h3>
+                                            github.com/rc1336
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:roger.campbell527@gmail.com?Subject=Hello,%20Roger!">
+                                            <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
+                                            Roger.Campbell527@gmail.com</a>
                                     </li>
                                 </ul>
                             </div>
