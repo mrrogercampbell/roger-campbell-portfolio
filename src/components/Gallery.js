@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Lightbox from 'react-images';
 
 class Gallery extends Component {
-    constructor () {
+    constructor() {
         super();
 
         this.state = {
@@ -18,40 +18,40 @@ class Gallery extends Component {
         this.handleClickImage = this.handleClickImage.bind(this);
         this.openLightbox = this.openLightbox.bind(this);
     }
-    openLightbox (index, event) {
+    openLightbox(index, event) {
         event.preventDefault();
         this.setState({
             currentImage: index,
             lightboxIsOpen: true,
         });
     }
-    closeLightbox () {
+    closeLightbox() {
         this.setState({
             currentImage: 0,
             lightboxIsOpen: false,
         });
     }
-    gotoPrevious () {
+    gotoPrevious() {
         this.setState({
             currentImage: this.state.currentImage - 1,
         });
     }
-    gotoNext () {
+    gotoNext() {
         this.setState({
             currentImage: this.state.currentImage + 1,
         });
     }
-    gotoImage (index) {
+    gotoImage(index) {
         this.setState({
             currentImage: index,
         });
     }
-    handleClickImage () {
+    handleClickImage() {
         if (this.state.currentImage === this.props.images.length - 1) return;
 
         this.gotoNext();
     }
-    renderGallery () {
+    renderGallery() {
         const { images } = this.props;
 
         if (!images) return;
@@ -68,7 +68,17 @@ class Gallery extends Component {
                     </a>
 
                     <h3>{obj.caption}</h3>
+                    <p>Stack: {obj.tech}</p>
                     <p>{obj.description}</p>
+
+                    <a
+                        href={obj.repo}
+                        target='_blank'
+                        className="icon fa-github"
+                    >
+                        GitHub
+                    </a>
+
                 </article>
             );
         });
@@ -79,7 +89,7 @@ class Gallery extends Component {
             </div>
         );
     }
-    render () {
+    render() {
         return (
             <div>
                 {this.renderGallery()}
