@@ -124,8 +124,10 @@ class HomeIndex extends React.Component {
                             <div className="4u 12u$(small)">
                                 <ul className="labeled-icons">
                                     <li>
-                                        <h3 className="icon fa-mobile"><span className="label">Phone</span></h3>
-                                        954.242.9917
+                                        <a href="tel:954-242-9917">
+                                            <h3 className="icon fa-mobile"><span className="label">Phone</span></h3>
+                                            954.242.9917
+                                        </a>
                                     </li>
                                     <li>
                                         <a href='https://www.linkedin.com/in/roger-campbell-ii' target='_blank'>
