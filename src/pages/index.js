@@ -8,19 +8,19 @@ import Gallery from '../components/Gallery'
 import thumb01 from '../assets/images/thumbs/project-1.png'
 import thumb02 from '../assets/images/thumbs/project-2.png'
 import thumb03 from '../assets/images/thumbs/project-3.png'
-import thumb04 from '../assets/images/thumbs/03.jpg'
+import thumb04 from '../assets/images/thumbs/project-4.png'
 
 import full01 from '../assets/images/fulls/project-1.png'
 import full02 from '../assets/images/fulls/project-2.png'
 import full03 from '../assets/images/fulls/project-3.png'
-import full04 from '../assets/images/fulls/03.jpg'
+import full04 from '../assets/images/fulls/project-4.png'
 
 
 const DEFAULT_IMAGES = [
-    { id: '1', src: full01, thumbnail: thumb01, caption: 'Project 1', description: 'Gameplay and app rendering are all handled by DOM.', tech: 'HTML, CSS, JavaScript.', repo: 'https://github.com/rc1336/project-1-triva-game' },
-    { id: '2', src: full02, thumbnail: thumb02, caption: 'Project 2', description: 'A web application built with MEHN stack.', tech: 'MongoDB, Express.js, Handlebars, Node.js.', repo: 'https://github.com/rc1336/project-2' },
-    { id: '3', src: full03, thumbnail: thumb03, caption: 'Project 3', description: 'Developed utilizing a MERN stack. My primary responsibilities were to plan and develop the backend of this application.', tech: 'MongoDB, Express.js, React.js, Node.js.', repo: 'https://github.com/rc1336/devbook-backend' },
-    { id: '4', src: full04, thumbnail: thumb04, caption: 'Project 4', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.', tech: 'MongoDB, Express.js, Handlebars, Node.js.', repo: 'https://github.com/rc1336/devbook-backend' },
+    { id: '1', src: full01, thumbnail: thumb01, caption: 'Battlestar Galactica Trivia Game', description: 'Gameplay and app rendering are all handled by DOM.', tech: 'HTML, CSS, JavaScript, GitHub Pages.', repo: 'https://github.com/rc1336/project-1-triva-game' },
+    { id: '2', src: full02, thumbnail: thumb02, caption: 'SpaceOne Federation', description: 'A web application built with MEHN stack.', tech: 'MongoDB, Express.js, Handlebars, Node.js.', repo: 'https://github.com/rc1336/project-2' },
+    { id: '3', src: full03, thumbnail: thumb03, caption: 'DevBook', description: 'Developed utilizing a MERN stack. My primary responsibilities were to plan and develop the backend of this application.', tech: 'MongoDB, Express.js, React.js, Node.js, Heroku, Surge.', repo: 'https://github.com/rc1336/devbook-backend' },
+    { id: '4', src: full04, thumbnail: thumb04, caption: 'Fun Scheduler', description: 'Simplifies the scheduling process for hospitality managers.', tech: 'React.js, JavaScript, Python, Django, CSS, PostgreSQL, Bootstrap, Heroku, Surge.', repo: 'https://github.com/CourtneyLTyler/devbook-fe' },
 
 ];
 
@@ -91,8 +91,8 @@ class HomeIndex extends React.Component {
 
                         <br />
 
-                        <p> <strong>Front-End Knowledge:</strong> JavaScript | React.js | React Native | Python | Django | Express | MongoDB | Mongoose | Node |  PostgresSQL </p>
-                        <p> <strong>Back-End Knowledge:</strong> JavaScript | React.js | React Native | Python | Django | Express | MongoDB | Mongoose | Node |  PostgresSQL </p>
+                        <p> <strong>Front-End:</strong> JavaScript | React.js | React Native | Python | Mongoose | Node |  PostgresSQL </p>
+                        <p> <strong>Back-End:</strong> JavaScript | Python | Django | Express | MongoDB | PostgresSQL | Mongoose | Node </p>
                         <ul className="actions">
                             <li><a href="#three" className="button">Get in Touch</a></li>
                         </ul>
@@ -118,7 +118,6 @@ class HomeIndex extends React.Component {
 
                     <section id="three">
                         <h2>Get In Touch</h2>
-                        <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
                         <div className="row">
                             <div className="8u 12u$(small)">
                             </div>
