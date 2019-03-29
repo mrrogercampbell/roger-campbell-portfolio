@@ -1,6 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
+import '../components/Index.css'
+
 import Layout from '../components/layout'
 // import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
@@ -16,8 +18,9 @@ import full03 from '../assets/images/fulls/project-3.png'
 import full04 from '../assets/images/fulls/project-4.png'
 
 
+
 const DEFAULT_IMAGES = [
-    { id: '1', src: full01, thumbnail: thumb01, caption: 'Battlestar Galactica Trivia Game', description: 'Gameplay and app rendering are all handled by DOM.', tech: 'HTML, CSS, JavaScript, GitHub Pages.', repo: 'https://github.com/rc1336/project-1-triva-game' },
+    { id: '1', src: full01, thumbnail: thumb01, caption: 'Battlestar Galactica Trivia Game', description: 'Gameplay and app rendering are all handled by DOM.', tech: 'HTML, CSS, JavaScript, GitHub Pages.', repo: 'https://github.com/rc1336/project-1-triva-game', depolyed: 'https://www.rogercampbell.net/project-1-triva-game/' },
     { id: '2', src: full02, thumbnail: thumb02, caption: 'SpaceOne Federation', description: 'A web application built with MEHN stack.', tech: 'MongoDB, Express.js, Handlebars, Node.js.', repo: 'https://github.com/rc1336/project-2' },
     { id: '3', src: full03, thumbnail: thumb03, caption: 'DevBook', description: 'Developed utilizing a MERN stack. My primary responsibilities were to plan and develop the backend of this application.', tech: 'MongoDB, Express.js, React.js, Node.js, Heroku, Surge.', repo: 'https://github.com/rc1336/devbook-backend' },
     { id: '4', src: full04, thumbnail: thumb04, caption: 'Fun Scheduler', description: 'Simplifies the scheduling process for hospitality managers.', tech: 'React.js, JavaScript, Python, Django, CSS, PostgreSQL, Bootstrap, Heroku, Surge.', repo: 'https://github.com/CourtneyLTyler/devbook-fe' },
@@ -101,19 +104,20 @@ class HomeIndex extends React.Component {
                     <section id="two">
                         <h2>Recent Work</h2>
 
-                        <Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail, caption, description, tech, repo }) => ({
+                        <Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail, caption, description, tech, repo, depolyed }) => ({
                             id,
                             src,
                             thumbnail,
                             caption,
                             description,
                             tech,
-                            repo
+                            repo,
+                            depolyed
                         }))} />
 
-                        <ul className="actions">
+                        {/* <ul className="actions">
                             <li><a href="#three" className="button">Get in Touch</a></li>
-                        </ul>
+                        </ul> */}
                     </section>
 
                     <section id="three">
@@ -122,7 +126,7 @@ class HomeIndex extends React.Component {
                             <div className="8u 12u$(small)">
                             </div>
                             <div className="4u 12u$(small)">
-                                <ul className="labeled-icons">
+                                <ul className="labeled-icons icon-ul">
                                     <li>
                                         <a href="tel:954-242-9917">
                                             <h3 className="icon fa-mobile"><span className="label">Phone</span></h3>
@@ -130,16 +134,17 @@ class HomeIndex extends React.Component {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href='https://www.linkedin.com/in/roger-campbell-ii' target='_blank'>
-                                            <h3 className="icon fa-linkedin"><span className="label">LinkedIn</span></h3>
-                                            linkedin.com/in/roger-campbell-ii
-                                        </a>
+                                        <a href='https://www.linkedin.com/in/roger-campbell-ii' target='_blank'
+                                            className='url'
+                                        >
+                                            <h3 className="icon fa-linkedin"><span className="label"></span></h3>linkedin.com/in/roger-campbell-ii
+                                            </a>
                                     </li>
                                     <li>
                                         <a href='https://github.com/rc1336' target='_blank'>
                                             <h3 className="icon fa-github"><span className="label">GitHub</span></h3>
                                             github.com/rc1336
-                                        </a>
+                                </a>
                                     </li>
                                     <li>
                                         <a href="mailto:roger.campbell527@gmail.com?Subject=Hello,%20Roger!">

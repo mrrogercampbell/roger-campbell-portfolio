@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import Lightbox from 'react-images';
+import './Gallery.css'
 
 class Gallery extends Component {
     constructor() {
@@ -61,7 +62,7 @@ class Gallery extends Component {
                 <article className="6u 12u$(xsmall) work-item" key={i}>
                     <a
                         className="image fit thumb"
-                        href={obj.src}
+                        href={obj.deploy}
                         onClick={(e) => this.openLightbox(i, e)}
                     >
                         <img src={obj.thumbnail} />
@@ -74,9 +75,17 @@ class Gallery extends Component {
                     <a
                         href={obj.repo}
                         target='_blank'
-                        className="icon fa-github"
+                        className="icon fa-github style"
                     >
                         GitHub
+                    </a>
+
+                    <a
+                        href={obj.depolyed}
+                        target='_blank'
+                        className="icon fa-chrome style"
+                    >
+                        Deployed Site
                     </a>
 
                 </article>
