@@ -3,12 +3,16 @@ import React from 'react'
 import Footer from './Footer'
 import avatar from '../assets/images/GA_02_-83.jpg'
 
+// import './Header.css'
+
 class Header extends React.Component {
     render() {
         return (
             <header id="header">
                 <div className="inner">
-                    <a href="#" className="image avatar"><img src={avatar} alt="Roger Campbell II" /></a>
+                    {/* <div className="image-cropper"> */}
+                    <a href="#" className="image avatar profile-pic"><img src={avatar} alt="Roger Campbell II" /></a>
+                    {/* </div> */}
                     <h1>Roger Campbell II </h1>
                     <h1>Software Engineer</h1>
                     <p>Washington DC</p>
