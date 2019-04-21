@@ -21,9 +21,9 @@ import full04 from '../assets/images/fulls/project-4.png'
 
 const DEFAULT_IMAGES = [
     { id: '1', src: full01, thumbnail: thumb01, caption: 'Battlestar Galactica Trivia Game', description: 'Gameplay and app rendering are all handled by DOM.', tech: 'HTML, CSS, JavaScript, GitHub Pages.', repo: 'https://github.com/rc1336/project-1-triva-game', depolyed: 'https://www.rogercampbell.net/project-1-triva-game/' },
-    { id: '2', src: full02, thumbnail: thumb02, caption: 'SpaceOne Federation', description: 'A web application built with MEHN stack.', tech: 'MongoDB, Express.js, Handlebars, Node.js.', repo: 'https://github.com/rc1336/project-2' },
-    { id: '3', src: full03, thumbnail: thumb03, caption: 'DevBook', description: 'Developed utilizing a MERN stack. My primary responsibilities were to plan and develop the backend of this application.', tech: 'MongoDB, Express.js, React.js, Node.js, Heroku, Surge.', repo: 'https://github.com/rc1336/devbook-backend' },
-    { id: '4', src: full04, thumbnail: thumb04, caption: 'Fun Scheduler', description: 'Simplifies the scheduling process for hospitality managers.', tech: 'React.js, JavaScript, Python, Django, CSS, PostgreSQL, Bootstrap, Heroku, Surge.', repo: 'https://github.com/CourtneyLTyler/devbook-fe' },
+    { id: '2', src: full02, thumbnail: thumb02, caption: 'SpaceOne Federation', description: 'A web application built with MEHN stack.', tech: 'MongoDB, Express.js, Handlebars, Node.js.', repo: 'https://github.com/rc1336/project-2', depolyed: 'https://spaceonefederation.herokuapp.com/user/' },
+    { id: '3', src: full03, thumbnail: thumb03, caption: 'DevBook', description: 'Developed utilizing a MERN stack. My primary responsibilities were to plan and develop the backend of this application.', tech: 'MongoDB, Express.js, React.js, Node.js, Heroku, Surge.', repo: 'https://github.com/rc1336/devbook-backend', depolyed: 'http://dev-book.surge.sh/' },
+    { id: '4', src: full04, thumbnail: thumb04, caption: 'Fun Scheduler', description: 'Simplifies the scheduling process for hospitality managers.', tech: 'React.js, JavaScript, Python, Django, CSS, PostgreSQL, Bootstrap, Heroku, Surge.', repo: 'https://github.com/CourtneyLTyler/devbook-fe', depolyed: 'http://scheduler12345.surge.sh/' },
 
 ];
 
@@ -90,7 +90,7 @@ class HomeIndex extends React.Component {
                         <header className="major">
                             <h2>About Me</h2>
                         </header>
-                        <h1>I am a mission driven Software Engineer equipped with the insight to thrive under pressure and tackle complex problems. I bring a creative edge and innovative mindset to development.</h1>
+                        <h1>Mission driven Software Engineer equipped with the insight to thrive under pressure and tackle complex problems. I bring a creative edge and innovative mindset to development.</h1>
 
                         <br />
 
