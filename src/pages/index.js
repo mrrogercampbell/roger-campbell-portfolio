@@ -144,7 +144,7 @@ class HomeIndex extends React.Component {
                                         <a href='https://github.com/rc1336' target='_blank'>
                                             <h3 className="icon fa-github"><span className="label">GitHub</span></h3>
                                             github.com/rc1336
-                                </a>
+                                        </a>
                                     </li>
                                     <li>
                                         <a href="mailto:roger.campbell527@gmail.com?Subject=Hello,%20Roger!">

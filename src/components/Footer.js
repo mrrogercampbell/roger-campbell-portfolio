@@ -13,7 +13,8 @@ class Footer extends React.Component {
                         <li><a href="tel:954-242-9917" className="icon fa-mobile"><span className="label">Phone</span></a></li>
                     </ul>
                     <ul className="copyright">
-                        <li> Roger.Campbell527@gmail.com</li><li>Phone: 954.242.9917</li>
+                        <li> Roger.Campbell527@gmail.com</li>
+                        <li><a href="tel:954-242-9917">Phone: 954.242.9917</a></li>
                     </ul>
                 </div>
             </div>
